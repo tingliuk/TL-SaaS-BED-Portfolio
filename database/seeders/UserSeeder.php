@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
                 'email' => 'supervisor@example.com',
                 'password' => 'Password1',
                 'email_verified_at' => now(),
-                'roles' => ['super-user', 'admin'],
+                'roles' => ['superuser', 'admin'],
                 'permissions' => [],
             ],
 
@@ -88,14 +88,16 @@ class UserSeeder extends Seeder
                 $newUser
             );
 
-            // Uncomment this line when using Spatie Permissions
-            // $user->assignRole($roles);
-            // $user->assignPermissions($permissions);
+            // Assign roles using Spatie Permissions
+            $user->assignRole($roles);
+            if (!empty($permissions)) {
+                $user->givePermissionTo($permissions);
+            }
 
         }
 
         // Uncomment the line below to create (10) randomly named users using the User Factory.
-        // User::factory(10)->create();
+        User::factory(10)->create();
 
     }
 }

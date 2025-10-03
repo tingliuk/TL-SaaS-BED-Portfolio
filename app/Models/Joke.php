@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Joke extends Model
 {
@@ -17,6 +18,7 @@ class Joke extends Model
     protected $fillable = [
         'title',
         'content',
+        'reference',
         'user_id',
         'published_at',
     ];
@@ -36,5 +38,31 @@ class Joke extends Model
     public function categories(): BelongsToMany
     {
         return $this->belongsToMany(Category::class);
+    }
+
+    public function votes(): HasMany
+    {
+        return $this->hasMany(Vote::class);
+    }
+
+    /**
+     * Get the average rating for this joke
+     */
+    public function getAverageRatingAttribute(): float
+    {
+        $votes = $this->votes;
+        if ($votes->isEmpty()) {
+            return 0.0;
+        }
+
+        $upVotes = $votes->where('rating', 1)->count();
+        $downVotes = $votes->where('rating', -1)->count();
+        $totalVotes = $upVotes + $downVotes;
+
+        if ($totalVotes === 0) {
+            return 0.0;
+        }
+
+        return (($upVotes + $downVotes) - $downVotes) / $totalVotes * 100;
     }
 }

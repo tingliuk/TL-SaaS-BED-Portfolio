@@ -45,11 +45,11 @@ class JokeSeeder extends Seeder
             ]);
 
             foreach ($categoryList as $category) {
-                Category::updateOrCreate(['title' => $category]);
+                Category::updateOrCreate(['name' => $category]);
             }
 
             if (! empty($categoryList)) {
-                $categoryIds = Category::whereIn('title', $categoryList)
+                $categoryIds = Category::whereIn('name', $categoryList)
                     ->get()
                     ->pluck('id')
                     ->toArray();

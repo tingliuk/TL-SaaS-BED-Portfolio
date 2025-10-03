@@ -15,22 +15,22 @@ class CategorySeeder extends Seeder
         Category::create(
             [
                 'id' => 1,
-                'title' => 'Unknown',
+                'name' => 'Unknown',
                 'description' => 'Sorry, but we have no idea where to place this joke.',
             ]
         );
 
         $seedCategories = [
             [
-                'title' => 'Dad',
+                'name' => 'Dad',
                 'description' => 'Dad jokes are always the most puntastic and groan worthy!',
             ],
             [
-                'title' => 'Pun',
+                'name' => 'Pun',
                 'description' => "Simply so punny you'll have to laugh",
             ],
             [
-                'title' => 'Pirate',
+                'name' => 'Pirate',
                 'description' => 'Aaaaarrrrrrrrgh, me hearties!',
             ],
         ];

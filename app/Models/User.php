@@ -8,11 +8,12 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable, HasApiTokens;
+    use HasFactory, Notifiable, HasApiTokens, HasRoles;
 
     /**
      * The attributes that are mass assignable.
@@ -21,9 +22,11 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'given_name',
+        'family_name',
         'email',
         'password',
-        'suspended',
+        'status',
     ];
 
     /**
@@ -52,5 +55,26 @@ class User extends Authenticatable
     public function jokes(): HasMany
     {
         return $this->hasMany(Joke::class);
+    }
+
+    public function votes(): HasMany
+    {
+        return $this->hasMany(Vote::class);
+    }
+
+    /**
+     * Get the user's display name (nickname/preferred name)
+     */
+    public function getDisplayNameAttribute(): string
+    {
+        if ($this->name) {
+            return $this->name;
+        }
+        
+        if ($this->given_name) {
+            return $this->given_name;
+        }
+        
+        return $this->family_name ?? 'User';
     }
 }
