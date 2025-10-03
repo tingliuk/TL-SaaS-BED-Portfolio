@@ -9,7 +9,9 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 
 /**
@@ -83,11 +85,7 @@ class AuthController extends Controller
      */
     public function login(Request $request): JsonResponse
     {
-        // Alternative using string based validation rules
-        // $validator = Validator::make($request->all(), [
-        //     'email' => 'required|string|email|max:255',
-        //     'password' => 'required|string|min:6',
-        // ]);
+        
         $validator = Validator::make($request->all(), [
             'email' => ['required', 'string', 'email', 'max:255',],
             'password' => ['required', 'string',],
@@ -160,6 +158,76 @@ class AuthController extends Controller
         return ApiResponse::success(
             [],
             'Logout successful'
+        );
+    }
+
+    /**
+     * Send password reset link to the user's email.
+     */
+    public function forgotPassword(Request $request): JsonResponse
+    {
+        $request->validate([
+            'email' => ['required', 'email'],
+        ]);
+
+        $status = Password::sendResetLink(
+            $request->only('email')
+        );
+
+        if ($status === Password::RESET_LINK_SENT) {
+            return ApiResponse::success(null, __($status));
+        }
+
+        return ApiResponse::error(['email' => __($status)], 'Unable to send reset link', 422);
+    }
+
+    /**
+     * Reset the user's password using a token.
+     */
+    public function resetPassword(Request $request): JsonResponse
+    {
+        $request->validate([
+            'token' => ['required'],
+            'email' => ['required', 'email'],
+            'password' => ['required', 'confirmed', 'min:6'],
+        ]);
+
+        $status = Password::reset(
+            $request->only('email', 'password', 'password_confirmation', 'token'),
+            function ($user) use ($request) {
+                $user->forceFill([
+                    'password' => Hash::make($request->string('password')),
+                    'remember_token' => Str::random(60),
+                ])->save();
+
+                // Revoke all existing tokens on reset
+                $user->tokens()->delete();
+            }
+        );
+
+        if ($status === Password::PASSWORD_RESET) {
+            return ApiResponse::success(null, __($status));
+        }
+
+        return ApiResponse::error(['email' => __($status)], 'Password reset failed', 422);
+    }
+
+    /**
+     * Logout all users holding the specified role.
+     */
+    public function logoutByRole(Request $request, string $role): JsonResponse
+    {
+        $users = User::role($role)->get();
+
+        $count = 0;
+        foreach ($users as $user) {
+            $deleted = $user->tokens()->delete();
+            $count += $deleted;
+        }
+
+        return ApiResponse::success(
+            ['revoked_tokens' => $count, 'role' => $role, 'users_affected' => $users->count()],
+            'Logout by role completed'
         );
     }
 
