@@ -4,6 +4,7 @@ namespace App\Responses;
 
 use http\Env\Response;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
 class ApiResponse
@@ -13,8 +14,7 @@ class ApiResponse
         $message = "Something went wrong! Process did not complete."
     ): void
     {
-        DB:
-        rollback();
+        DB::rollback();
         self::throw($error, $message);
     }
 

@@ -22,14 +22,8 @@ use function Pest\Laravel\putJson;
  * - Superuser (Level 999): All Admin + backup
  */
 
-// Helper function to create user with role
-function createUserWithRole(string $roleName): User
-{
-    $role = Role::findOrCreate($roleName);
-    $user = User::factory()->create();
-    $user->assignRole($role);
-    return $user;
-}
+// Include shared helper
+require_once __DIR__ . '/../../../Helpers/UserHelper.php';
 
 // MINIMUM REQUIRED TESTS
 

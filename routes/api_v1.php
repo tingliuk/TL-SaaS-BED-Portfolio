@@ -42,6 +42,8 @@ Route::middleware(['auth:sanctum'])->group(function () {
 
     // Jokes routes
     Route::apiResource('jokes', JokeController::class);
+    Route::post('jokes/{joke}/restore', [JokeController::class, 'restore']);
+    Route::delete('jokes/{joke}/force', [JokeController::class, 'forceDelete']);
 
     // Votes routes
     Route::post('jokes/{joke}/vote', [VoteController::class, 'vote']);

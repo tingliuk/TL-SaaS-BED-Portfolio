@@ -17,7 +17,11 @@ class JokeFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'title' => fake()->sentence(3),
+            'content' => fake()->paragraph(3),
+            'reference' => fake()->optional()->url(),
+            'user_id' => \App\Models\User::factory(),
+            'published_at' => fake()->optional()->dateTimeBetween('-1 year', 'now'),
         ];
     }
 }
