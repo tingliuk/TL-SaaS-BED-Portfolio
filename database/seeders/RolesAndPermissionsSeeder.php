@@ -147,6 +147,7 @@ class RolesAndPermissionsSeeder extends Seeder
             'votes.delete',
             'votes.browse',
             'votes.clear-user',
+            'votes.clear-all',
             'users.browse',
             'users.read',
             'users.create',

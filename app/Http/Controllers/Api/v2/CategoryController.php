@@ -29,7 +29,7 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'title' => ['string', 'required', 'min:4'],
+            'name' => ['string', 'required', 'min:4'],
             'description' => ['string', 'nullable', 'min:6'],
         ]);
 

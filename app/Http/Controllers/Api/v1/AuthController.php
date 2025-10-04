@@ -62,6 +62,9 @@ class AuthController extends Controller
             ),
         ]);
 
+        // Assign default 'user' role
+        $user->assignRole('user');
+
         $token = $user->createToken('MyAppToken')->plainTextToken;
 
         return ApiResponse::success(
@@ -217,7 +220,14 @@ class AuthController extends Controller
      */
     public function logoutByRole(Request $request, string $role): JsonResponse
     {
-        $users = User::role($role)->get();
+        try {
+            $users = User::role($role)->get();
+        } catch (\Spatie\Permission\Exceptions\RoleDoesNotExist $e) {
+            return ApiResponse::success(
+                ['revoked_tokens' => 0, 'role' => $role, 'users_affected' => 0],
+                'Logout by role completed - role not found'
+            );
+        }
 
         $count = 0;
         foreach ($users as $user) {
