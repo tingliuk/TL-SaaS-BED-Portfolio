@@ -65,6 +65,21 @@ class RolesAndPermissionsSeeder extends Seeder
         }
 
         // Create roles and assign permissions
+        $userRole = Role::create(['name' => 'user']);
+        $userRole->givePermissionTo([
+            'categories.browse',
+            'categories.read',
+            'categories.search',
+            'jokes.browse',
+            'jokes.read',
+            'jokes.create',
+            'jokes.update',
+            'jokes.delete',
+            'votes.create',
+            'votes.update',
+            'votes.delete',
+        ]);
+
         $clientRole = Role::create(['name' => 'client']);
         $clientRole->givePermissionTo([
             'categories.browse',
@@ -102,7 +117,9 @@ class RolesAndPermissionsSeeder extends Seeder
             'votes.clear-user',
             'users.browse',
             'users.read',
+            'users.create',
             'users.update',
+            'users.delete',
             'users.search',
             'users.change-status',
             'auth.logout-role',
