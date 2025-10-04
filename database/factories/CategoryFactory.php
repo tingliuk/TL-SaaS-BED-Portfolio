@@ -17,8 +17,9 @@ class CategoryFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => fake()->word(),
+            'name' => fake()->word(),
             'description' => fake()->sentence(),
+            'user_id' => \App\Models\User::factory(),
         ];
     }
 }
