@@ -13,7 +13,7 @@ class JokePolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->hasRole(['user', 'staff', 'admin', 'superuser']);
+        return $user->hasRole(['client', 'staff', 'admin', 'superuser']);
     }
 
     /**
@@ -22,7 +22,7 @@ class JokePolicy
      */
     public function view(User $user, Joke $joke): bool
     {
-        return $user->hasRole(['user', 'staff', 'admin', 'superuser']);
+        return $user->hasRole(['client', 'staff', 'admin', 'superuser']);
     }
 
     /**
@@ -31,7 +31,7 @@ class JokePolicy
      */
     public function create(User $user): bool
     {
-        return $user->hasRole(['user', 'staff', 'admin', 'superuser']);
+        return $user->hasRole(['client', 'staff', 'admin', 'superuser']);
     }
 
     /**
@@ -50,8 +50,8 @@ class JokePolicy
             return true;
         }
 
-        // Users can only update their own jokes
-        if ($user->hasRole('user')) {
+        // Clients can only update their own jokes
+        if ($user->hasRole('client')) {
             return $joke->user_id === $user->id;
         }
 
@@ -74,8 +74,8 @@ class JokePolicy
             return true;
         }
 
-        // Users can only delete their own jokes
-        if ($user->hasRole('user')) {
+        // Clients can only delete their own jokes
+        if ($user->hasRole('client')) {
             return $joke->user_id === $user->id;
         }
 
@@ -106,6 +106,6 @@ class JokePolicy
      */
     public function search(User $user): bool
     {
-        return $user->hasRole(['user', 'staff', 'admin', 'superuser']);
+        return $user->hasRole(['client', 'staff', 'admin', 'superuser']);
     }
 }

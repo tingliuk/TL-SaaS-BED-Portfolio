@@ -72,8 +72,8 @@ class JokeController extends Controller
 
         $query = Joke::with(['user', 'categories']);
 
-        // For regular users, filter out jokes with unknown/empty categories or soft deleted categories
-        if ($request->user()->hasRole('user')) {
+                // For regular clients, filter out jokes with unknown/empty categories or soft deleted categories
+                if ($request->user()->hasRole('client')) {
             $query->whereHas('categories', function ($q) {
                 $q->whereNull('deleted_at'); // Only jokes that have at least one non-deleted category
             });
@@ -186,8 +186,8 @@ class JokeController extends Controller
             return ApiResponse::error(null, 'Unauthorized to view this joke', 403);
         }
 
-        // For regular users, check if joke has valid categories (not soft deleted)
-        if (request()->user()->hasRole('user')) {
+                // For regular clients, check if joke has valid categories (not soft deleted)
+                if (request()->user()->hasRole('client')) {
             $hasValidCategories = $joke->categories()->whereNull('deleted_at')->exists();
             if (!$hasValidCategories) {
                 return ApiResponse::error(null, "Joke not found", 404);

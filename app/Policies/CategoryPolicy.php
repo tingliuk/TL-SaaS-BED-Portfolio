@@ -13,7 +13,7 @@ class CategoryPolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->hasRole(['user', 'staff', 'admin', 'superuser']);
+        return $user->hasRole(['client', 'staff', 'admin', 'superuser']);
     }
 
     /**
@@ -22,7 +22,7 @@ class CategoryPolicy
      */
     public function view(User $user, Category $category): bool
     {
-        return $user->hasRole(['user', 'staff', 'admin', 'superuser']);
+        return $user->hasRole(['client', 'staff', 'admin', 'superuser']);
     }
 
     /**
@@ -87,6 +87,6 @@ class CategoryPolicy
      */
     public function search(User $user): bool
     {
-        return $user->hasRole(['user', 'staff', 'admin', 'superuser']);
+        return $user->hasRole(['client', 'staff', 'admin', 'superuser']);
     }
 }

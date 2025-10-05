@@ -50,7 +50,7 @@ class AuthController extends Controller
             return ApiResponse::error(
                 ['error' => $validator->errors()],
                 'Registration details error',
-                401
+                422
             );
         }
 
@@ -62,8 +62,8 @@ class AuthController extends Controller
             ),
         ]);
 
-        // Assign default 'user' role
-        $user->assignRole('user');
+        // Assign default 'client' role
+        $user->assignRole('client');
 
         $token = $user->createToken('MyAppToken')->plainTextToken;
 

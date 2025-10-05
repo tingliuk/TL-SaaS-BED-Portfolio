@@ -13,7 +13,7 @@ class VotePolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->hasRole(['user', 'staff', 'admin', 'superuser']);
+        return $user->hasRole(['client', 'staff', 'admin', 'superuser']);
     }
 
     /**
@@ -22,7 +22,7 @@ class VotePolicy
      */
     public function view(User $user, Vote $vote): bool
     {
-        return $user->hasRole(['user', 'staff', 'admin', 'superuser']);
+        return $user->hasRole(['client', 'staff', 'admin', 'superuser']);
     }
 
     /**
@@ -31,7 +31,7 @@ class VotePolicy
      */
     public function create(User $user): bool
     {
-        return $user->hasRole(['user', 'staff', 'admin', 'superuser']);
+        return $user->hasRole(['client', 'staff', 'admin', 'superuser']);
     }
 
     /**
@@ -50,8 +50,8 @@ class VotePolicy
             return true;
         }
 
-        // Users can only update their own votes
-        if ($user->hasRole('user')) {
+        // Clients can only update their own votes
+        if ($user->hasRole('client')) {
             return $vote->user_id === $user->id;
         }
 
@@ -74,8 +74,8 @@ class VotePolicy
             return true;
         }
 
-        // Users can only delete their own votes
-        if ($user->hasRole('user')) {
+        // Clients can only delete their own votes
+        if ($user->hasRole('client')) {
             return $vote->user_id === $user->id;
         }
 
@@ -125,12 +125,12 @@ class VotePolicy
     public function voteOnJoke(User $user, $joke): bool
     {
         // All authenticated users can vote
-        if (!$user->hasRole(['user', 'staff', 'admin', 'superuser'])) {
+        if (!$user->hasRole(['client', 'staff', 'admin', 'superuser'])) {
             return false;
         }
 
-        // For regular users, check if joke has valid categories
-        if ($user->hasRole('user')) {
+        // For regular clients, check if joke has valid categories
+        if ($user->hasRole('client')) {
             // Load categories if not already loaded
             if (!$joke->relationLoaded('categories')) {
                 $joke->load('categories');
