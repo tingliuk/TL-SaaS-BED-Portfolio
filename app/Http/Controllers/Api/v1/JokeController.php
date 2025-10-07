@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Gate;
  * where users can manage their own jokes, while staff+ can manage any joke.
  * 
  * @package App\Http\Controllers\Api\v1
- * @author TAFE Assessment
+ * @author Ting Liu
  * @version 1.0.0
  * @since 2025-10-04
  * 

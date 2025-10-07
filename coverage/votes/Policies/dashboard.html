@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for F:\Ting\tafe\nosql\api assessment\TL-SaaS-BED-Portfolio\app\Policies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../_css/bootstrap.min.css?v=11.0.10" rel="stylesheet" type="text/css">
+  <link href="../_css/nv.d3.min.css?v=11.0.10" rel="stylesheet" type="text/css">
+  <link href="../_css/style.css?v=11.0.10" rel="stylesheet" type="text/css">
+  <link href="../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../index.html">F:\Ting\tafe\nosql\api assessment\TL-SaaS-BED-Portfolio\app</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Policies</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CategoryPolicy.php.html#8">App\Policies\CategoryPolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JokePolicy.php.html#8">App\Policies\JokePolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="VotePolicy.php.html#8">App\Policies\VotePolicy</a></td><td class="text-right">41%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="JokePolicy.php.html#8">App\Policies\JokePolicy</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="VotePolicy.php.html#8">App\Policies\VotePolicy</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="CategoryPolicy.php.html#8">App\Policies\CategoryPolicy</a></td><td class="text-right">110</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CategoryPolicy.php.html#14"><abbr title="App\Policies\CategoryPolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CategoryPolicy.php.html#23"><abbr title="App\Policies\CategoryPolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CategoryPolicy.php.html#32"><abbr title="App\Policies\CategoryPolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CategoryPolicy.php.html#41"><abbr title="App\Policies\CategoryPolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CategoryPolicy.php.html#51"><abbr title="App\Policies\CategoryPolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CategoryPolicy.php.html#70"><abbr title="App\Policies\CategoryPolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CategoryPolicy.php.html#79"><abbr title="App\Policies\CategoryPolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CategoryPolicy.php.html#88"><abbr title="App\Policies\CategoryPolicy::search">search</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JokePolicy.php.html#14"><abbr title="App\Policies\JokePolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JokePolicy.php.html#23"><abbr title="App\Policies\JokePolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JokePolicy.php.html#32"><abbr title="App\Policies\JokePolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JokePolicy.php.html#41"><abbr title="App\Policies\JokePolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JokePolicy.php.html#65"><abbr title="App\Policies\JokePolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JokePolicy.php.html#89"><abbr title="App\Policies\JokePolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JokePolicy.php.html#98"><abbr title="App\Policies\JokePolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JokePolicy.php.html#107"><abbr title="App\Policies\JokePolicy::search">search</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="VotePolicy.php.html#23"><abbr title="App\Policies\VotePolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="VotePolicy.php.html#41"><abbr title="App\Policies\VotePolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="VotePolicy.php.html#89"><abbr title="App\Policies\VotePolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="VotePolicy.php.html#98"><abbr title="App\Policies\VotePolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="VotePolicy.php.html#150"><abbr title="App\Policies\VotePolicy::removeVoteFromJoke">removeVoteFromJoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="VotePolicy.php.html#65"><abbr title="App\Policies\VotePolicy::delete">delete</abbr></a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="VotePolicy.php.html#125"><abbr title="App\Policies\VotePolicy::voteOnJoke">voteOnJoke</abbr></a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="JokePolicy.php.html#41"><abbr title="App\Policies\JokePolicy::update">update</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="JokePolicy.php.html#65"><abbr title="App\Policies\JokePolicy::delete">delete</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="VotePolicy.php.html#41"><abbr title="App\Policies\VotePolicy::update">update</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="CategoryPolicy.php.html#51"><abbr title="App\Policies\CategoryPolicy::delete">delete</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="VotePolicy.php.html#150"><abbr title="App\Policies\VotePolicy::removeVoteFromJoke">removeVoteFromJoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="VotePolicy.php.html#65"><abbr title="App\Policies\VotePolicy::delete">delete</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="VotePolicy.php.html#125"><abbr title="App\Policies\VotePolicy::voteOnJoke">voteOnJoke</abbr></a></td><td class="text-right">4</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.10</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.19</a> and <a href="https://phpunit.de/">PHPUnit 11.5.15</a> at Tue Oct 7 12:53:49 UTC 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../_js/jquery.min.js?v=11.0.10" type="text/javascript"></script>
+  <script src="../_js/d3.min.js?v=11.0.10" type="text/javascript"></script>
+  <script src="../_js/nv.d3.min.js?v=11.0.10" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([2,0,0,0,0,1,0,0,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([21,0,0,0,0,0,1,0,0,1,0,4], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,10,"<a href=\"CategoryPolicy.php.html#8\">App\\Policies\\CategoryPolicy<\/a>"],[0,14,"<a href=\"JokePolicy.php.html#8\">App\\Policies\\JokePolicy<\/a>"],[41.17647058823529,21,"<a href=\"VotePolicy.php.html#8\">App\\Policies\\VotePolicy<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"CategoryPolicy.php.html#14\">App\\Policies\\CategoryPolicy::viewAny<\/a>"],[0,1,"<a href=\"CategoryPolicy.php.html#23\">App\\Policies\\CategoryPolicy::view<\/a>"],[0,1,"<a href=\"CategoryPolicy.php.html#32\">App\\Policies\\CategoryPolicy::create<\/a>"],[0,1,"<a href=\"CategoryPolicy.php.html#41\">App\\Policies\\CategoryPolicy::update<\/a>"],[0,3,"<a href=\"CategoryPolicy.php.html#51\">App\\Policies\\CategoryPolicy::delete<\/a>"],[0,1,"<a href=\"CategoryPolicy.php.html#70\">App\\Policies\\CategoryPolicy::restore<\/a>"],[0,1,"<a href=\"CategoryPolicy.php.html#79\">App\\Policies\\CategoryPolicy::forceDelete<\/a>"],[0,1,"<a href=\"CategoryPolicy.php.html#88\">App\\Policies\\CategoryPolicy::search<\/a>"],[0,1,"<a href=\"JokePolicy.php.html#14\">App\\Policies\\JokePolicy::viewAny<\/a>"],[0,1,"<a href=\"JokePolicy.php.html#23\">App\\Policies\\JokePolicy::view<\/a>"],[0,1,"<a href=\"JokePolicy.php.html#32\">App\\Policies\\JokePolicy::create<\/a>"],[0,4,"<a href=\"JokePolicy.php.html#41\">App\\Policies\\JokePolicy::update<\/a>"],[0,4,"<a href=\"JokePolicy.php.html#65\">App\\Policies\\JokePolicy::delete<\/a>"],[0,1,"<a href=\"JokePolicy.php.html#89\">App\\Policies\\JokePolicy::restore<\/a>"],[0,1,"<a href=\"JokePolicy.php.html#98\">App\\Policies\\JokePolicy::forceDelete<\/a>"],[0,1,"<a href=\"JokePolicy.php.html#107\">App\\Policies\\JokePolicy::search<\/a>"],[100,1,"<a href=\"VotePolicy.php.html#14\">App\\Policies\\VotePolicy::viewAny<\/a>"],[0,1,"<a href=\"VotePolicy.php.html#23\">App\\Policies\\VotePolicy::view<\/a>"],[100,1,"<a href=\"VotePolicy.php.html#32\">App\\Policies\\VotePolicy::create<\/a>"],[0,4,"<a href=\"VotePolicy.php.html#41\">App\\Policies\\VotePolicy::update<\/a>"],[57.14285714285714,4,"<a href=\"VotePolicy.php.html#65\">App\\Policies\\VotePolicy::delete<\/a>"],[0,1,"<a href=\"VotePolicy.php.html#89\">App\\Policies\\VotePolicy::restore<\/a>"],[0,1,"<a href=\"VotePolicy.php.html#98\">App\\Policies\\VotePolicy::forceDelete<\/a>"],[100,1,"<a href=\"VotePolicy.php.html#107\">App\\Policies\\VotePolicy::clearUserVotes<\/a>"],[100,1,"<a href=\"VotePolicy.php.html#116\">App\\Policies\\VotePolicy::clearAllVotes<\/a>"],[85.71428571428571,4,"<a href=\"VotePolicy.php.html#125\">App\\Policies\\VotePolicy::voteOnJoke<\/a>"],[0,2,"<a href=\"VotePolicy.php.html#150\">App\\Policies\\VotePolicy::removeVoteFromJoke<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

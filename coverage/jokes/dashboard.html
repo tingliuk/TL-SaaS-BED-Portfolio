@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for F:\Ting\tafe\nosql\api assessment\TL-SaaS-BED-Portfolio\app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=11.0.10" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css?v=11.0.10" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=11.0.10" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">F:\Ting\tafe\nosql\api assessment\TL-SaaS-BED-Portfolio\app</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/Api/v1/AuthController.php.html#20">App\Http\Controllers\Api\v1\AuthController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#40">App\Http\Controllers\Api\v1\CategoryController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#42">App\Http\Controllers\Api\v1\UserController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/VoteController.php.html#35">App\Http\Controllers\Api\v1\VoteController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/AuthenticatedSessionController.php.html#12">App\Http\Controllers\Auth\AuthenticatedSessionController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/ConfirmablePasswordController.php.html#12">App\Http\Controllers\Auth\ConfirmablePasswordController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationNotificationController.php.html#9">App\Http\Controllers\Auth\EmailVerificationNotificationController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationPromptController.php.html#10">App\Http\Controllers\Auth\EmailVerificationPromptController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/NewPasswordController.php.html#16">App\Http\Controllers\Auth\NewPasswordController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/PasswordController.php.html#11">App\Http\Controllers\Auth\PasswordController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/PasswordResetLinkController.php.html#11">App\Http\Controllers\Auth\PasswordResetLinkController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/RegisteredUserController.php.html#15">App\Http\Controllers\Auth\RegisteredUserController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/VerifyEmailController.php.html#10">App\Http\Controllers\Auth\VerifyEmailController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Auth/LoginRequest.php.html#12">App\Http\Requests\Auth\LoginRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/ProfileUpdateRequest.php.html#9">App\Http\Requests\ProfileUpdateRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreCategoryRequest.php.html#7">App\Http\Requests\StoreCategoryRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreUserRequest.php.html#7">App\Http\Requests\StoreUserRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateCategoryRequest.php.html#7">App\Http\Requests\UpdateCategoryRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdatePasswordRequest.php.html#7">App\Http\Requests\UpdatePasswordRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateUserRequest.php.html#8">App\Http\Requests\UpdateUserRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Category.php.html#11">App\Models\Category</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/CategoryPolicy.php.html#8">App\Policies\CategoryPolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#8">App\Policies\VotePolicy</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/Components/AdminLayout.php.html#9">App\View\Components\AdminLayout</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/Components/AppLayout.php.html#8">App\View\Components\AppLayout</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/Components/GuestLayout.php.html#8">App\View\Components\GuestLayout</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#14">App\Models\User</a></td><td class="text-right">36%</td></tr>
+       <tr><td><a href="Models/Joke.php.html#12">App\Models\Joke</a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#10">App\Providers\TelescopeServiceProvider</a></td><td class="text-right">56%</td></tr>
+       <tr><td><a href="Responses/ApiResponse.php.html#10">App\Responses\ApiResponse</a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="Models/Vote.php.html#9">App\Models\Vote</a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#41">App\Http\Controllers\Api\v1\JokeController</a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="Policies/JokePolicy.php.html#8">App\Policies\JokePolicy</a></td><td class="text-right">75%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#42">App\Http\Controllers\Api\v1\UserController</a></td><td class="text-right">2352</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#40">App\Http\Controllers\Api\v1\CategoryController</a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#8">App\Policies\VotePolicy</a></td><td class="text-right">462</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/VoteController.php.html#35">App\Http\Controllers\Api\v1\VoteController</a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/AuthController.php.html#20">App\Http\Controllers\Api\v1\AuthController</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Policies/CategoryPolicy.php.html#8">App\Policies\CategoryPolicy</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Http/Requests/Auth/LoginRequest.php.html#12">App\Http\Requests\Auth\LoginRequest</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#41">App\Http\Controllers\Api\v1\JokeController</a></td><td class="text-right">55</td></tr>
+       <tr><td><a href="Models/Joke.php.html#12">App\Models\Joke</a></td><td class="text-right">17</td></tr>
+       <tr><td><a href="Policies/JokePolicy.php.html#8">App\Policies\JokePolicy</a></td><td class="text-right">17</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#10">App\Providers\TelescopeServiceProvider</a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="Models/User.php.html#14">App\Models\User</a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/ConfirmablePasswordController.php.html#12">App\Http\Controllers\Auth\ConfirmablePasswordController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/NewPasswordController.php.html#16">App\Http\Controllers\Auth\NewPasswordController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/PasswordResetLinkController.php.html#11">App\Http\Controllers\Auth\PasswordResetLinkController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/VerifyEmailController.php.html#10">App\Http\Controllers\Auth\VerifyEmailController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationNotificationController.php.html#9">App\Http\Controllers\Auth\EmailVerificationNotificationController</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationPromptController.php.html#10">App\Http\Controllers\Auth\EmailVerificationPromptController</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/Api/v1/AuthController.php.html#36"><abbr title="App\Http\Controllers\Api\v1\AuthController::register">register</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/AuthController.php.html#89"><abbr title="App\Http\Controllers\Api\v1\AuthController::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/AuthController.php.html#139"><abbr title="App\Http\Controllers\Api\v1\AuthController::profile">profile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/AuthController.php.html#157"><abbr title="App\Http\Controllers\Api\v1\AuthController::logout">logout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/AuthController.php.html#170"><abbr title="App\Http\Controllers\Api\v1\AuthController::forgotPassword">forgotPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/AuthController.php.html#190"><abbr title="App\Http\Controllers\Api\v1\AuthController::resetPassword">resetPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/AuthController.php.html#221"><abbr title="App\Http\Controllers\Api\v1\AuthController::logoutByRole">logoutByRole</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#64"><abbr title="App\Http\Controllers\Api\v1\CategoryController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#118"><abbr title="App\Http\Controllers\Api\v1\CategoryController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#153"><abbr title="App\Http\Controllers\Api\v1\CategoryController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#197"><abbr title="App\Http\Controllers\Api\v1\CategoryController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#234"><abbr title="App\Http\Controllers\Api\v1\CategoryController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#271"><abbr title="App\Http\Controllers\Api\v1\CategoryController::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#314"><abbr title="App\Http\Controllers\Api\v1\CategoryController::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#384"><abbr title="App\Http\Controllers\Api\v1\JokeController::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#59"><abbr title="App\Http\Controllers\Api\v1\UserController::profile">profile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#90"><abbr title="App\Http\Controllers\Api\v1\UserController::updateProfile">updateProfile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#120"><abbr title="App\Http\Controllers\Api\v1\UserController::updatePassword">updatePassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#155"><abbr title="App\Http\Controllers\Api\v1\UserController::deleteProfile">deleteProfile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#190"><abbr title="App\Http\Controllers\Api\v1\UserController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#253"><abbr title="App\Http\Controllers\Api\v1\UserController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#301"><abbr title="App\Http\Controllers\Api\v1\UserController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#345"><abbr title="App\Http\Controllers\Api\v1\UserController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#387"><abbr title="App\Http\Controllers\Api\v1\UserController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#430"><abbr title="App\Http\Controllers\Api\v1\UserController::assignRoles">assignRoles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#475"><abbr title="App\Http\Controllers\Api\v1\UserController::changeStatus">changeStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#511"><abbr title="App\Http\Controllers\Api\v1\UserController::canUpdateUser">canUpdateUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#549"><abbr title="App\Http\Controllers\Api\v1\UserController::canDeleteUser">canDeleteUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#582"><abbr title="App\Http\Controllers\Api\v1\UserController::canCreateUserWithRoles">canCreateUserWithRoles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/VoteController.php.html#60"><abbr title="App\Http\Controllers\Api\v1\VoteController::vote">vote</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/VoteController.php.html#130"><abbr title="App\Http\Controllers\Api\v1\VoteController::removeVote">removeVote</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/VoteController.php.html#181"><abbr title="App\Http\Controllers\Api\v1\VoteController::clearUserVotes">clearUserVotes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/VoteController.php.html#222"><abbr title="App\Http\Controllers\Api\v1\VoteController::clearAllVotes">clearAllVotes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/AuthenticatedSessionController.php.html#17"><abbr title="App\Http\Controllers\Auth\AuthenticatedSessionController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/AuthenticatedSessionController.php.html#25"><abbr title="App\Http\Controllers\Auth\AuthenticatedSessionController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/AuthenticatedSessionController.php.html#37"><abbr title="App\Http\Controllers\Auth\AuthenticatedSessionController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/ConfirmablePasswordController.php.html#17"><abbr title="App\Http\Controllers\Auth\ConfirmablePasswordController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/ConfirmablePasswordController.php.html#25"><abbr title="App\Http\Controllers\Auth\ConfirmablePasswordController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationNotificationController.php.html#14"><abbr title="App\Http\Controllers\Auth\EmailVerificationNotificationController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationPromptController.php.html#15"><abbr title="App\Http\Controllers\Auth\EmailVerificationPromptController::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/NewPasswordController.php.html#21"><abbr title="App\Http\Controllers\Auth\NewPasswordController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/NewPasswordController.php.html#31"><abbr title="App\Http\Controllers\Auth\NewPasswordController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/PasswordController.php.html#16"><abbr title="App\Http\Controllers\Auth\PasswordController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/PasswordResetLinkController.php.html#16"><abbr title="App\Http\Controllers\Auth\PasswordResetLinkController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/PasswordResetLinkController.php.html#26"><abbr title="App\Http\Controllers\Auth\PasswordResetLinkController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/RegisteredUserController.php.html#20"><abbr title="App\Http\Controllers\Auth\RegisteredUserController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/RegisteredUserController.php.html#30"><abbr title="App\Http\Controllers\Auth\RegisteredUserController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/VerifyEmailController.php.html#15"><abbr title="App\Http\Controllers\Auth\VerifyEmailController::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Auth/LoginRequest.php.html#17"><abbr title="App\Http\Requests\Auth\LoginRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Auth/LoginRequest.php.html#27"><abbr title="App\Http\Requests\Auth\LoginRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Auth/LoginRequest.php.html#40"><abbr title="App\Http\Requests\Auth\LoginRequest::authenticate">authenticate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Auth/LoginRequest.php.html#60"><abbr title="App\Http\Requests\Auth\LoginRequest::ensureIsNotRateLimited">ensureIsNotRateLimited</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Auth/LoginRequest.php.html#81"><abbr title="App\Http\Requests\Auth\LoginRequest::throttleKey">throttleKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/ProfileUpdateRequest.php.html#16"><abbr title="App\Http\Requests\ProfileUpdateRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreCategoryRequest.php.html#12"><abbr title="App\Http\Requests\StoreCategoryRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreCategoryRequest.php.html#22"><abbr title="App\Http\Requests\StoreCategoryRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreUserRequest.php.html#12"><abbr title="App\Http\Requests\StoreUserRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/StoreUserRequest.php.html#22"><abbr title="App\Http\Requests\StoreUserRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateCategoryRequest.php.html#12"><abbr title="App\Http\Requests\UpdateCategoryRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateCategoryRequest.php.html#22"><abbr title="App\Http\Requests\UpdateCategoryRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdatePasswordRequest.php.html#12"><abbr title="App\Http\Requests\UpdatePasswordRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdatePasswordRequest.php.html#22"><abbr title="App\Http\Requests\UpdatePasswordRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateUserRequest.php.html#13"><abbr title="App\Http\Requests\UpdateUserRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UpdateUserRequest.php.html#23"><abbr title="App\Http\Requests\UpdateUserRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Category.php.html#25"><abbr title="App\Models\Category::user">user</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Category.php.html#30"><abbr title="App\Models\Category::jokes">jokes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Category.php.html#39"><abbr title="App\Models\Category::jokesByTitleDesc">jokesByTitleDesc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Category.php.html#44"><abbr title="App\Models\Category::jokesByTitle">jokesByTitle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Category.php.html#53"><abbr title="App\Models\Category::jokesByDateAddedDesc">jokesByDateAddedDesc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Joke.php.html#52"><abbr title="App\Models\Joke::getAverageRatingAttribute">getAverageRatingAttribute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#56"><abbr title="App\Models\User::jokes">jokes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#61"><abbr title="App\Models\User::votes">votes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#69"><abbr title="App\Models\User::getDisplayNameAttribute">getDisplayNameAttribute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Vote.php.html#26"><abbr title="App\Models\Vote::user">user</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Vote.php.html#31"><abbr title="App\Models\Vote::joke">joke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/CategoryPolicy.php.html#14"><abbr title="App\Policies\CategoryPolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/CategoryPolicy.php.html#23"><abbr title="App\Policies\CategoryPolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/CategoryPolicy.php.html#32"><abbr title="App\Policies\CategoryPolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/CategoryPolicy.php.html#41"><abbr title="App\Policies\CategoryPolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/CategoryPolicy.php.html#51"><abbr title="App\Policies\CategoryPolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/CategoryPolicy.php.html#70"><abbr title="App\Policies\CategoryPolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/CategoryPolicy.php.html#79"><abbr title="App\Policies\CategoryPolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/CategoryPolicy.php.html#88"><abbr title="App\Policies\CategoryPolicy::search">search</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/JokePolicy.php.html#98"><abbr title="App\Policies\JokePolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#14"><abbr title="App\Policies\VotePolicy::viewAny">viewAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#23"><abbr title="App\Policies\VotePolicy::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#32"><abbr title="App\Policies\VotePolicy::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#41"><abbr title="App\Policies\VotePolicy::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#65"><abbr title="App\Policies\VotePolicy::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#89"><abbr title="App\Policies\VotePolicy::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#98"><abbr title="App\Policies\VotePolicy::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#107"><abbr title="App\Policies\VotePolicy::clearUserVotes">clearUserVotes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#116"><abbr title="App\Policies\VotePolicy::clearAllVotes">clearAllVotes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#125"><abbr title="App\Policies\VotePolicy::voteOnJoke">voteOnJoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#150"><abbr title="App\Policies\VotePolicy::removeVoteFromJoke">removeVoteFromJoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Responses/ApiResponse.php.html#12"><abbr title="App\Responses\ApiResponse::rollback">rollback</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Responses/ApiResponse.php.html#21"><abbr title="App\Responses\ApiResponse::throw">throw</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/Components/AdminLayout.php.html#14"><abbr title="App\View\Components\AdminLayout::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/Components/AdminLayout.php.html#22"><abbr title="App\View\Components\AdminLayout::render">render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/Components/AppLayout.php.html#13"><abbr title="App\View\Components\AppLayout::render">render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/Components/GuestLayout.php.html#13"><abbr title="App\View\Components\GuestLayout::render">render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#15"><abbr title="App\Providers\TelescopeServiceProvider::register">register</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#56"><abbr title="App\Providers\TelescopeServiceProvider::gate">gate</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#176"><abbr title="App\Http\Controllers\Api\v1\JokeController::show">show</abbr></a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#341"><abbr title="App\Http\Controllers\Api\v1\JokeController::restore">restore</abbr></a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="Policies/JokePolicy.php.html#41"><abbr title="App\Policies\JokePolicy::update">update</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="Policies/JokePolicy.php.html#65"><abbr title="App\Policies\JokePolicy::delete">delete</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#66"><abbr title="App\Http\Controllers\Api\v1\JokeController::index">index</abbr></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#226"><abbr title="App\Http\Controllers\Api\v1\JokeController::update">update</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#271"><abbr title="App\Http\Controllers\Api\v1\JokeController::destroy">destroy</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#308"><abbr title="App\Http\Controllers\Api\v1\JokeController::random">random</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#36"><abbr title="App\Providers\TelescopeServiceProvider::hideSensitiveRequestDetails">hideSensitiveRequestDetails</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#135"><abbr title="App\Http\Controllers\Api\v1\JokeController::store">store</abbr></a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#64"><abbr title="App\Http\Controllers\Api\v1\CategoryController::index">index</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#511"><abbr title="App\Http\Controllers\Api\v1\UserController::canUpdateUser">canUpdateUser</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#582"><abbr title="App\Http\Controllers\Api\v1\UserController::canCreateUserWithRoles">canCreateUserWithRoles</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#190"><abbr title="App\Http\Controllers\Api\v1\UserController::index">index</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#253"><abbr title="App\Http\Controllers\Api\v1\UserController::store">store</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#549"><abbr title="App\Http\Controllers\Api\v1\UserController::canDeleteUser">canDeleteUser</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/VoteController.php.html#60"><abbr title="App\Http\Controllers\Api\v1\VoteController::vote">vote</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/VoteController.php.html#130"><abbr title="App\Http\Controllers\Api\v1\VoteController::removeVote">removeVote</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#271"><abbr title="App\Http\Controllers\Api\v1\CategoryController::restore">restore</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#475"><abbr title="App\Http\Controllers\Api\v1\UserController::changeStatus">changeStatus</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#41"><abbr title="App\Policies\VotePolicy::update">update</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#65"><abbr title="App\Policies\VotePolicy::delete">delete</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#125"><abbr title="App\Policies\VotePolicy::voteOnJoke">voteOnJoke</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#15"><abbr title="App\Providers\TelescopeServiceProvider::register">register</abbr></a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/AuthController.php.html#89"><abbr title="App\Http\Controllers\Api\v1\AuthController::login">login</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/AuthController.php.html#221"><abbr title="App\Http\Controllers\Api\v1\AuthController::logoutByRole">logoutByRole</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#153"><abbr title="App\Http\Controllers\Api\v1\CategoryController::show">show</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#197"><abbr title="App\Http\Controllers\Api\v1\CategoryController::update">update</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#234"><abbr title="App\Http\Controllers\Api\v1\CategoryController::destroy">destroy</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#314"><abbr title="App\Http\Controllers\Api\v1\CategoryController::forceDelete">forceDelete</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#384"><abbr title="App\Http\Controllers\Api\v1\JokeController::forceDelete">forceDelete</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#301"><abbr title="App\Http\Controllers\Api\v1\UserController::show">show</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#345"><abbr title="App\Http\Controllers\Api\v1\UserController::update">update</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#387"><abbr title="App\Http\Controllers\Api\v1\UserController::destroy">destroy</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#430"><abbr title="App\Http\Controllers\Api\v1\UserController::assignRoles">assignRoles</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/VoteController.php.html#181"><abbr title="App\Http\Controllers\Api\v1\VoteController::clearUserVotes">clearUserVotes</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/VerifyEmailController.php.html#15"><abbr title="App\Http\Controllers\Auth\VerifyEmailController::__invoke">__invoke</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Models/Joke.php.html#52"><abbr title="App\Models\Joke::getAverageRatingAttribute">getAverageRatingAttribute</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Models/User.php.html#69"><abbr title="App\Models\User::getDisplayNameAttribute">getDisplayNameAttribute</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Policies/CategoryPolicy.php.html#51"><abbr title="App\Policies\CategoryPolicy::delete">delete</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#66"><abbr title="App\Http\Controllers\Api\v1\JokeController::index">index</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/AuthController.php.html#36"><abbr title="App\Http\Controllers\Api\v1\AuthController::register">register</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/AuthController.php.html#170"><abbr title="App\Http\Controllers\Api\v1\AuthController::forgotPassword">forgotPassword</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/AuthController.php.html#190"><abbr title="App\Http\Controllers\Api\v1\AuthController::resetPassword">resetPassword</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/CategoryController.php.html#118"><abbr title="App\Http\Controllers\Api\v1\CategoryController::store">store</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/UserController.php.html#120"><abbr title="App\Http\Controllers\Api\v1\UserController::updatePassword">updatePassword</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/VoteController.php.html#222"><abbr title="App\Http\Controllers\Api\v1\VoteController::clearAllVotes">clearAllVotes</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/ConfirmablePasswordController.php.html#25"><abbr title="App\Http\Controllers\Auth\ConfirmablePasswordController::store">store</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationNotificationController.php.html#14"><abbr title="App\Http\Controllers\Auth\EmailVerificationNotificationController::store">store</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationPromptController.php.html#15"><abbr title="App\Http\Controllers\Auth\EmailVerificationPromptController::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/NewPasswordController.php.html#31"><abbr title="App\Http\Controllers\Auth\NewPasswordController::store">store</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/PasswordResetLinkController.php.html#26"><abbr title="App\Http\Controllers\Auth\PasswordResetLinkController::store">store</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Requests/Auth/LoginRequest.php.html#40"><abbr title="App\Http\Requests\Auth\LoginRequest::authenticate">authenticate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Requests/Auth/LoginRequest.php.html#60"><abbr title="App\Http\Requests\Auth\LoginRequest::ensureIsNotRateLimited">ensureIsNotRateLimited</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Policies/VotePolicy.php.html#150"><abbr title="App\Policies\VotePolicy::removeVoteFromJoke">removeVoteFromJoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#176"><abbr title="App\Http\Controllers\Api\v1\JokeController::show">show</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#341"><abbr title="App\Http\Controllers\Api\v1\JokeController::restore">restore</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Policies/JokePolicy.php.html#41"><abbr title="App\Policies\JokePolicy::update">update</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Policies/JokePolicy.php.html#65"><abbr title="App\Policies\JokePolicy::delete">delete</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#226"><abbr title="App\Http\Controllers\Api\v1\JokeController::update">update</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#271"><abbr title="App\Http\Controllers\Api\v1\JokeController::destroy">destroy</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#135"><abbr title="App\Http\Controllers\Api\v1\JokeController::store">store</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/Api/v1/JokeController.php.html#308"><abbr title="App\Http\Controllers\Api\v1\JokeController::random">random</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#36"><abbr title="App\Providers\TelescopeServiceProvider::hideSensitiveRequestDetails">hideSensitiveRequestDetails</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.10</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.19</a> and <a href="https://phpunit.de/">PHPUnit 11.5.15</a> at Tue Oct 7 12:51:48 UTC 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js?v=11.0.10" type="text/javascript"></script>
+  <script src="_js/d3.min.js?v=11.0.10" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js?v=11.0.10" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([26,0,0,0,1,1,2,1,2,0,0,6], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([101,0,0,0,0,2,0,0,5,5,0,21], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,14,"<a href=\"Http\/Controllers\/Api\/v1\/AuthController.php.html#20\">App\\Http\\Controllers\\Api\\v1\\AuthController<\/a>"],[0,26,"<a href=\"Http\/Controllers\/Api\/v1\/CategoryController.php.html#40\">App\\Http\\Controllers\\Api\\v1\\CategoryController<\/a>"],[70.73170731707317,31,"<a href=\"Http\/Controllers\/Api\/v1\/JokeController.php.html#41\">App\\Http\\Controllers\\Api\\v1\\JokeController<\/a>"],[0,48,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#42\">App\\Http\\Controllers\\Api\\v1\\UserController<\/a>"],[0,15,"<a href=\"Http\/Controllers\/Api\/v1\/VoteController.php.html#35\">App\\Http\\Controllers\\Api\\v1\\VoteController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Auth\/AuthenticatedSessionController.php.html#12\">App\\Http\\Controllers\\Auth\\AuthenticatedSessionController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Auth\/ConfirmablePasswordController.php.html#12\">App\\Http\\Controllers\\Auth\\ConfirmablePasswordController<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Auth\/EmailVerificationNotificationController.php.html#9\">App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Auth\/EmailVerificationPromptController.php.html#10\">App\\Http\\Controllers\\Auth\\EmailVerificationPromptController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Auth\/NewPasswordController.php.html#16\">App\\Http\\Controllers\\Auth\\NewPasswordController<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/PasswordController.php.html#11\">App\\Http\\Controllers\\Auth\\PasswordController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Auth\/PasswordResetLinkController.php.html#11\">App\\Http\\Controllers\\Auth\\PasswordResetLinkController<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Auth\/RegisteredUserController.php.html#15\">App\\Http\\Controllers\\Auth\\RegisteredUserController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Auth\/VerifyEmailController.php.html#10\">App\\Http\\Controllers\\Auth\\VerifyEmailController<\/a>"],[100,0,"<a href=\"Http\/Controllers\/Controller.php.html#5\">App\\Http\\Controllers\\Controller<\/a>"],[0,7,"<a href=\"Http\/Requests\/Auth\/LoginRequest.php.html#12\">App\\Http\\Requests\\Auth\\LoginRequest<\/a>"],[0,1,"<a href=\"Http\/Requests\/ProfileUpdateRequest.php.html#9\">App\\Http\\Requests\\ProfileUpdateRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/StoreCategoryRequest.php.html#7\">App\\Http\\Requests\\StoreCategoryRequest<\/a>"],[100,2,"<a href=\"Http\/Requests\/StoreJokeRequest.php.html#7\">App\\Http\\Requests\\StoreJokeRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/StoreUserRequest.php.html#7\">App\\Http\\Requests\\StoreUserRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/UpdateCategoryRequest.php.html#7\">App\\Http\\Requests\\UpdateCategoryRequest<\/a>"],[100,2,"<a href=\"Http\/Requests\/UpdateJokeRequest.php.html#7\">App\\Http\\Requests\\UpdateJokeRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/UpdatePasswordRequest.php.html#7\">App\\Http\\Requests\\UpdatePasswordRequest<\/a>"],[0,2,"<a href=\"Http\/Requests\/UpdateUserRequest.php.html#8\">App\\Http\\Requests\\UpdateUserRequest<\/a>"],[0,5,"<a href=\"Models\/Category.php.html#11\">App\\Models\\Category<\/a>"],[100,0,"<a href=\"Models\/Category_Joke.php.html#7\">App\\Models\\Category_Joke<\/a>"],[40,7,"<a href=\"Models\/Joke.php.html#12\">App\\Models\\Joke<\/a>"],[36.36363636363637,6,"<a href=\"Models\/User.php.html#14\">App\\Models\\User<\/a>"],[60,3,"<a href=\"Models\/Vote.php.html#9\">App\\Models\\Vote<\/a>"],[0,10,"<a href=\"Policies\/CategoryPolicy.php.html#8\">App\\Policies\\CategoryPolicy<\/a>"],[75,14,"<a href=\"Policies\/JokePolicy.php.html#8\">App\\Policies\\JokePolicy<\/a>"],[0,21,"<a href=\"Policies\/VotePolicy.php.html#8\">App\\Policies\\VotePolicy<\/a>"],[100,2,"<a href=\"Providers\/AppServiceProvider.php.html#7\">App\\Providers\\AppServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#10\">App\\Providers\\AuthServiceProvider<\/a>"],[56.52173913043478,9,"<a href=\"Providers\/TelescopeServiceProvider.php.html#10\">App\\Providers\\TelescopeServiceProvider<\/a>"],[57.14285714285714,5,"<a href=\"Responses\/ApiResponse.php.html#10\">App\\Responses\\ApiResponse<\/a>"],[0,2,"<a href=\"View\/Components\/AdminLayout.php.html#9\">App\\View\\Components\\AdminLayout<\/a>"],[0,1,"<a href=\"View\/Components\/AppLayout.php.html#8\">App\\View\\Components\\AppLayout<\/a>"],[0,1,"<a href=\"View\/Components\/GuestLayout.php.html#8\">App\\View\\Components\\GuestLayout<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"Http\/Controllers\/Api\/v1\/AuthController.php.html#36\">App\\Http\\Controllers\\Api\\v1\\AuthController::register<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/v1\/AuthController.php.html#89\">App\\Http\\Controllers\\Api\\v1\\AuthController::login<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Api\/v1\/AuthController.php.html#139\">App\\Http\\Controllers\\Api\\v1\\AuthController::profile<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Api\/v1\/AuthController.php.html#157\">App\\Http\\Controllers\\Api\\v1\\AuthController::logout<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Api\/v1\/AuthController.php.html#170\">App\\Http\\Controllers\\Api\\v1\\AuthController::forgotPassword<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Api\/v1\/AuthController.php.html#190\">App\\Http\\Controllers\\Api\\v1\\AuthController::resetPassword<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/v1\/AuthController.php.html#221\">App\\Http\\Controllers\\Api\\v1\\AuthController::logoutByRole<\/a>"],[0,8,"<a href=\"Http\/Controllers\/Api\/v1\/CategoryController.php.html#64\">App\\Http\\Controllers\\Api\\v1\\CategoryController::index<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Api\/v1\/CategoryController.php.html#118\">App\\Http\\Controllers\\Api\\v1\\CategoryController::store<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/v1\/CategoryController.php.html#153\">App\\Http\\Controllers\\Api\\v1\\CategoryController::show<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/v1\/CategoryController.php.html#197\">App\\Http\\Controllers\\Api\\v1\\CategoryController::update<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/v1\/CategoryController.php.html#234\">App\\Http\\Controllers\\Api\\v1\\CategoryController::destroy<\/a>"],[0,4,"<a href=\"Http\/Controllers\/Api\/v1\/CategoryController.php.html#271\">App\\Http\\Controllers\\Api\\v1\\CategoryController::restore<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/v1\/CategoryController.php.html#314\">App\\Http\\Controllers\\Api\\v1\\CategoryController::forceDelete<\/a>"],[72.72727272727273,7,"<a href=\"Http\/Controllers\/Api\/v1\/JokeController.php.html#66\">App\\Http\\Controllers\\Api\\v1\\JokeController::index<\/a>"],[88.88888888888889,3,"<a href=\"Http\/Controllers\/Api\/v1\/JokeController.php.html#135\">App\\Http\\Controllers\\Api\\v1\\JokeController::store<\/a>"],[70,5,"<a href=\"Http\/Controllers\/Api\/v1\/JokeController.php.html#176\">App\\Http\\Controllers\\Api\\v1\\JokeController::show<\/a>"],[80,4,"<a href=\"Http\/Controllers\/Api\/v1\/JokeController.php.html#226\">App\\Http\\Controllers\\Api\\v1\\JokeController::update<\/a>"],[85.71428571428571,3,"<a href=\"Http\/Controllers\/Api\/v1\/JokeController.php.html#271\">App\\Http\\Controllers\\Api\\v1\\JokeController::destroy<\/a>"],[85.71428571428571,2,"<a href=\"Http\/Controllers\/Api\/v1\/JokeController.php.html#308\">App\\Http\\Controllers\\Api\\v1\\JokeController::random<\/a>"],[70,4,"<a href=\"Http\/Controllers\/Api\/v1\/JokeController.php.html#341\">App\\Http\\Controllers\\Api\\v1\\JokeController::restore<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/v1\/JokeController.php.html#384\">App\\Http\\Controllers\\Api\\v1\\JokeController::forceDelete<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#59\">App\\Http\\Controllers\\Api\\v1\\UserController::profile<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#90\">App\\Http\\Controllers\\Api\\v1\\UserController::updateProfile<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#120\">App\\Http\\Controllers\\Api\\v1\\UserController::updatePassword<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#155\">App\\Http\\Controllers\\Api\\v1\\UserController::deleteProfile<\/a>"],[0,5,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#190\">App\\Http\\Controllers\\Api\\v1\\UserController::index<\/a>"],[0,5,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#253\">App\\Http\\Controllers\\Api\\v1\\UserController::store<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#301\">App\\Http\\Controllers\\Api\\v1\\UserController::show<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#345\">App\\Http\\Controllers\\Api\\v1\\UserController::update<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#387\">App\\Http\\Controllers\\Api\\v1\\UserController::destroy<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#430\">App\\Http\\Controllers\\Api\\v1\\UserController::assignRoles<\/a>"],[0,4,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#475\">App\\Http\\Controllers\\Api\\v1\\UserController::changeStatus<\/a>"],[0,6,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#511\">App\\Http\\Controllers\\Api\\v1\\UserController::canUpdateUser<\/a>"],[0,5,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#549\">App\\Http\\Controllers\\Api\\v1\\UserController::canDeleteUser<\/a>"],[0,6,"<a href=\"Http\/Controllers\/Api\/v1\/UserController.php.html#582\">App\\Http\\Controllers\\Api\\v1\\UserController::canCreateUserWithRoles<\/a>"],[0,5,"<a href=\"Http\/Controllers\/Api\/v1\/VoteController.php.html#60\">App\\Http\\Controllers\\Api\\v1\\VoteController::vote<\/a>"],[0,5,"<a href=\"Http\/Controllers\/Api\/v1\/VoteController.php.html#130\">App\\Http\\Controllers\\Api\\v1\\VoteController::removeVote<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/v1\/VoteController.php.html#181\">App\\Http\\Controllers\\Api\\v1\\VoteController::clearUserVotes<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Api\/v1\/VoteController.php.html#222\">App\\Http\\Controllers\\Api\\v1\\VoteController::clearAllVotes<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/AuthenticatedSessionController.php.html#17\">App\\Http\\Controllers\\Auth\\AuthenticatedSessionController::create<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/AuthenticatedSessionController.php.html#25\">App\\Http\\Controllers\\Auth\\AuthenticatedSessionController::store<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/AuthenticatedSessionController.php.html#37\">App\\Http\\Controllers\\Auth\\AuthenticatedSessionController::destroy<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/ConfirmablePasswordController.php.html#17\">App\\Http\\Controllers\\Auth\\ConfirmablePasswordController::show<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Auth\/ConfirmablePasswordController.php.html#25\">App\\Http\\Controllers\\Auth\\ConfirmablePasswordController::store<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Auth\/EmailVerificationNotificationController.php.html#14\">App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController::store<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Auth\/EmailVerificationPromptController.php.html#15\">App\\Http\\Controllers\\Auth\\EmailVerificationPromptController::__invoke<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/NewPasswordController.php.html#21\">App\\Http\\Controllers\\Auth\\NewPasswordController::create<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Auth\/NewPasswordController.php.html#31\">App\\Http\\Controllers\\Auth\\NewPasswordController::store<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/PasswordController.php.html#16\">App\\Http\\Controllers\\Auth\\PasswordController::update<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/PasswordResetLinkController.php.html#16\">App\\Http\\Controllers\\Auth\\PasswordResetLinkController::create<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Auth\/PasswordResetLinkController.php.html#26\">App\\Http\\Controllers\\Auth\\PasswordResetLinkController::store<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/RegisteredUserController.php.html#20\">App\\Http\\Controllers\\Auth\\RegisteredUserController::create<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/RegisteredUserController.php.html#30\">App\\Http\\Controllers\\Auth\\RegisteredUserController::store<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Auth\/VerifyEmailController.php.html#15\">App\\Http\\Controllers\\Auth\\VerifyEmailController::__invoke<\/a>"],[0,1,"<a href=\"Http\/Requests\/Auth\/LoginRequest.php.html#17\">App\\Http\\Requests\\Auth\\LoginRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/Auth\/LoginRequest.php.html#27\">App\\Http\\Requests\\Auth\\LoginRequest::rules<\/a>"],[0,2,"<a href=\"Http\/Requests\/Auth\/LoginRequest.php.html#40\">App\\Http\\Requests\\Auth\\LoginRequest::authenticate<\/a>"],[0,2,"<a href=\"Http\/Requests\/Auth\/LoginRequest.php.html#60\">App\\Http\\Requests\\Auth\\LoginRequest::ensureIsNotRateLimited<\/a>"],[0,1,"<a href=\"Http\/Requests\/Auth\/LoginRequest.php.html#81\">App\\Http\\Requests\\Auth\\LoginRequest::throttleKey<\/a>"],[0,1,"<a href=\"Http\/Requests\/ProfileUpdateRequest.php.html#16\">App\\Http\\Requests\\ProfileUpdateRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreCategoryRequest.php.html#12\">App\\Http\\Requests\\StoreCategoryRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreCategoryRequest.php.html#22\">App\\Http\\Requests\\StoreCategoryRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/StoreJokeRequest.php.html#12\">App\\Http\\Requests\\StoreJokeRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/StoreJokeRequest.php.html#22\">App\\Http\\Requests\\StoreJokeRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreUserRequest.php.html#12\">App\\Http\\Requests\\StoreUserRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/StoreUserRequest.php.html#22\">App\\Http\\Requests\\StoreUserRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateCategoryRequest.php.html#12\">App\\Http\\Requests\\UpdateCategoryRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateCategoryRequest.php.html#22\">App\\Http\\Requests\\UpdateCategoryRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/UpdateJokeRequest.php.html#12\">App\\Http\\Requests\\UpdateJokeRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/UpdateJokeRequest.php.html#22\">App\\Http\\Requests\\UpdateJokeRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdatePasswordRequest.php.html#12\">App\\Http\\Requests\\UpdatePasswordRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdatePasswordRequest.php.html#22\">App\\Http\\Requests\\UpdatePasswordRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateUserRequest.php.html#13\">App\\Http\\Requests\\UpdateUserRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/UpdateUserRequest.php.html#23\">App\\Http\\Requests\\UpdateUserRequest::rules<\/a>"],[0,1,"<a href=\"Models\/Category.php.html#25\">App\\Models\\Category::user<\/a>"],[0,1,"<a href=\"Models\/Category.php.html#30\">App\\Models\\Category::jokes<\/a>"],[0,1,"<a href=\"Models\/Category.php.html#39\">App\\Models\\Category::jokesByTitleDesc<\/a>"],[0,1,"<a href=\"Models\/Category.php.html#44\">App\\Models\\Category::jokesByTitle<\/a>"],[0,1,"<a href=\"Models\/Category.php.html#53\">App\\Models\\Category::jokesByDateAddedDesc<\/a>"],[100,1,"<a href=\"Models\/Joke.php.html#27\">App\\Models\\Joke::casts<\/a>"],[100,1,"<a href=\"Models\/Joke.php.html#34\">App\\Models\\Joke::user<\/a>"],[100,1,"<a href=\"Models\/Joke.php.html#39\">App\\Models\\Joke::categories<\/a>"],[100,1,"<a href=\"Models\/Joke.php.html#44\">App\\Models\\Joke::votes<\/a>"],[0,3,"<a href=\"Models\/Joke.php.html#52\">App\\Models\\Joke::getAverageRatingAttribute<\/a>"],[100,1,"<a href=\"Models\/User.php.html#48\">App\\Models\\User::casts<\/a>"],[0,1,"<a href=\"Models\/User.php.html#56\">App\\Models\\User::jokes<\/a>"],[0,1,"<a href=\"Models\/User.php.html#61\">App\\Models\\User::votes<\/a>"],[0,3,"<a href=\"Models\/User.php.html#69\">App\\Models\\User::getDisplayNameAttribute<\/a>"],[100,1,"<a href=\"Models\/Vote.php.html#19\">App\\Models\\Vote::casts<\/a>"],[0,1,"<a href=\"Models\/Vote.php.html#26\">App\\Models\\Vote::user<\/a>"],[0,1,"<a href=\"Models\/Vote.php.html#31\">App\\Models\\Vote::joke<\/a>"],[0,1,"<a href=\"Policies\/CategoryPolicy.php.html#14\">App\\Policies\\CategoryPolicy::viewAny<\/a>"],[0,1,"<a href=\"Policies\/CategoryPolicy.php.html#23\">App\\Policies\\CategoryPolicy::view<\/a>"],[0,1,"<a href=\"Policies\/CategoryPolicy.php.html#32\">App\\Policies\\CategoryPolicy::create<\/a>"],[0,1,"<a href=\"Policies\/CategoryPolicy.php.html#41\">App\\Policies\\CategoryPolicy::update<\/a>"],[0,3,"<a href=\"Policies\/CategoryPolicy.php.html#51\">App\\Policies\\CategoryPolicy::delete<\/a>"],[0,1,"<a href=\"Policies\/CategoryPolicy.php.html#70\">App\\Policies\\CategoryPolicy::restore<\/a>"],[0,1,"<a href=\"Policies\/CategoryPolicy.php.html#79\">App\\Policies\\CategoryPolicy::forceDelete<\/a>"],[0,1,"<a href=\"Policies\/CategoryPolicy.php.html#88\">App\\Policies\\CategoryPolicy::search<\/a>"],[100,1,"<a href=\"Policies\/JokePolicy.php.html#14\">App\\Policies\\JokePolicy::viewAny<\/a>"],[100,1,"<a href=\"Policies\/JokePolicy.php.html#23\">App\\Policies\\JokePolicy::view<\/a>"],[100,1,"<a href=\"Policies\/JokePolicy.php.html#32\">App\\Policies\\JokePolicy::create<\/a>"],[71.42857142857143,4,"<a href=\"Policies\/JokePolicy.php.html#41\">App\\Policies\\JokePolicy::update<\/a>"],[71.42857142857143,4,"<a href=\"Policies\/JokePolicy.php.html#65\">App\\Policies\\JokePolicy::delete<\/a>"],[100,1,"<a href=\"Policies\/JokePolicy.php.html#89\">App\\Policies\\JokePolicy::restore<\/a>"],[0,1,"<a href=\"Policies\/JokePolicy.php.html#98\">App\\Policies\\JokePolicy::forceDelete<\/a>"],[100,1,"<a href=\"Policies\/JokePolicy.php.html#107\">App\\Policies\\JokePolicy::search<\/a>"],[0,1,"<a href=\"Policies\/VotePolicy.php.html#14\">App\\Policies\\VotePolicy::viewAny<\/a>"],[0,1,"<a href=\"Policies\/VotePolicy.php.html#23\">App\\Policies\\VotePolicy::view<\/a>"],[0,1,"<a href=\"Policies\/VotePolicy.php.html#32\">App\\Policies\\VotePolicy::create<\/a>"],[0,4,"<a href=\"Policies\/VotePolicy.php.html#41\">App\\Policies\\VotePolicy::update<\/a>"],[0,4,"<a href=\"Policies\/VotePolicy.php.html#65\">App\\Policies\\VotePolicy::delete<\/a>"],[0,1,"<a href=\"Policies\/VotePolicy.php.html#89\">App\\Policies\\VotePolicy::restore<\/a>"],[0,1,"<a href=\"Policies\/VotePolicy.php.html#98\">App\\Policies\\VotePolicy::forceDelete<\/a>"],[0,1,"<a href=\"Policies\/VotePolicy.php.html#107\">App\\Policies\\VotePolicy::clearUserVotes<\/a>"],[0,1,"<a href=\"Policies\/VotePolicy.php.html#116\">App\\Policies\\VotePolicy::clearAllVotes<\/a>"],[0,4,"<a href=\"Policies\/VotePolicy.php.html#125\">App\\Policies\\VotePolicy::voteOnJoke<\/a>"],[0,2,"<a href=\"Policies\/VotePolicy.php.html#150\">App\\Policies\\VotePolicy::removeVoteFromJoke<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#12\">App\\Providers\\AppServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#20\">App\\Providers\\AppServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#24\">App\\Providers\\AuthServiceProvider::boot<\/a>"],[40,6,"<a href=\"Providers\/TelescopeServiceProvider.php.html#15\">App\\Providers\\TelescopeServiceProvider::register<\/a>"],[87.5,2,"<a href=\"Providers\/TelescopeServiceProvider.php.html#36\">App\\Providers\\TelescopeServiceProvider::hideSensitiveRequestDetails<\/a>"],[40,1,"<a href=\"Providers\/TelescopeServiceProvider.php.html#56\">App\\Providers\\TelescopeServiceProvider::gate<\/a>"],[0,1,"<a href=\"Responses\/ApiResponse.php.html#12\">App\\Responses\\ApiResponse::rollback<\/a>"],[0,1,"<a href=\"Responses\/ApiResponse.php.html#21\">App\\Responses\\ApiResponse::throw<\/a>"],[100,1,"<a href=\"Responses\/ApiResponse.php.html#32\">App\\Responses\\ApiResponse::sendResponse<\/a>"],[100,1,"<a href=\"Responses\/ApiResponse.php.html#48\">App\\Responses\\ApiResponse::success<\/a>"],[100,1,"<a href=\"Responses\/ApiResponse.php.html#53\">App\\Responses\\ApiResponse::error<\/a>"],[0,1,"<a href=\"View\/Components\/AdminLayout.php.html#14\">App\\View\\Components\\AdminLayout::__construct<\/a>"],[0,1,"<a href=\"View\/Components\/AdminLayout.php.html#22\">App\\View\\Components\\AdminLayout::render<\/a>"],[0,1,"<a href=\"View\/Components\/AppLayout.php.html#13\">App\\View\\Components\\AppLayout::render<\/a>"],[0,1,"<a href=\"View\/Components\/GuestLayout.php.html#13\">App\\View\\Components\\GuestLayout::render<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

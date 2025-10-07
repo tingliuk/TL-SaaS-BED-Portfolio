@@ -36,14 +36,16 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::delete('me', [UserController::class, 'deleteProfile']);
 
     // Categories routes
-    Route::apiResource('categories', CategoryController::class);
     Route::post('categories/{category}/restore', [CategoryController::class, 'restore']);
     Route::delete('categories/{category}/force', [CategoryController::class, 'forceDelete']);
+    Route::apiResource('categories', CategoryController::class);
+
 
     // Jokes routes
-    Route::apiResource('jokes', JokeController::class);
     Route::post('jokes/{joke}/restore', [JokeController::class, 'restore']);
     Route::delete('jokes/{joke}/force', [JokeController::class, 'forceDelete']);
+    Route::apiResource('jokes', JokeController::class);
+
 
     // Votes routes
     Route::post('jokes/{joke}/vote', [VoteController::class, 'vote']);

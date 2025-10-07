@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for F:\Ting\tafe\nosql\api assessment\TL-SaaS-BED-Portfolio\app\Http\Controllers\Api</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../_css/bootstrap.min.css?v=11.0.10" rel="stylesheet" type="text/css">
+  <link href="../../../_css/nv.d3.min.css?v=11.0.10" rel="stylesheet" type="text/css">
+  <link href="../../../_css/style.css?v=11.0.10" rel="stylesheet" type="text/css">
+  <link href="../../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../../index.html">F:\Ting\tafe\nosql\api assessment\TL-SaaS-BED-Portfolio\app</a></li>
+         <li class="breadcrumb-item"><a href="../../index.html">Http</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">Controllers</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Api</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="v1/AuthController.php.html#20">App\Http\Controllers\Api\v1\AuthController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#40">App\Http\Controllers\Api\v1\CategoryController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#41">App\Http\Controllers\Api\v1\JokeController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#42">App\Http\Controllers\Api\v1\UserController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/VoteController.php.html#35">App\Http\Controllers\Api\v1\VoteController</a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="v1/UserController.php.html#42">App\Http\Controllers\Api\v1\UserController</a></td><td class="text-right">2352</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#41">App\Http\Controllers\Api\v1\JokeController</a></td><td class="text-right">992</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#40">App\Http\Controllers\Api\v1\CategoryController</a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="v1/AuthController.php.html#20">App\Http\Controllers\Api\v1\AuthController</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="v1/VoteController.php.html#35">App\Http\Controllers\Api\v1\VoteController</a></td><td class="text-right">15</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="v1/AuthController.php.html#36"><abbr title="App\Http\Controllers\Api\v1\AuthController::register">register</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/AuthController.php.html#89"><abbr title="App\Http\Controllers\Api\v1\AuthController::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/AuthController.php.html#139"><abbr title="App\Http\Controllers\Api\v1\AuthController::profile">profile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/AuthController.php.html#157"><abbr title="App\Http\Controllers\Api\v1\AuthController::logout">logout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/AuthController.php.html#170"><abbr title="App\Http\Controllers\Api\v1\AuthController::forgotPassword">forgotPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/AuthController.php.html#190"><abbr title="App\Http\Controllers\Api\v1\AuthController::resetPassword">resetPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/AuthController.php.html#221"><abbr title="App\Http\Controllers\Api\v1\AuthController::logoutByRole">logoutByRole</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#64"><abbr title="App\Http\Controllers\Api\v1\CategoryController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#118"><abbr title="App\Http\Controllers\Api\v1\CategoryController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#153"><abbr title="App\Http\Controllers\Api\v1\CategoryController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#197"><abbr title="App\Http\Controllers\Api\v1\CategoryController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#234"><abbr title="App\Http\Controllers\Api\v1\CategoryController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#271"><abbr title="App\Http\Controllers\Api\v1\CategoryController::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#314"><abbr title="App\Http\Controllers\Api\v1\CategoryController::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#66"><abbr title="App\Http\Controllers\Api\v1\JokeController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#135"><abbr title="App\Http\Controllers\Api\v1\JokeController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#176"><abbr title="App\Http\Controllers\Api\v1\JokeController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#226"><abbr title="App\Http\Controllers\Api\v1\JokeController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#271"><abbr title="App\Http\Controllers\Api\v1\JokeController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#308"><abbr title="App\Http\Controllers\Api\v1\JokeController::random">random</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#341"><abbr title="App\Http\Controllers\Api\v1\JokeController::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#384"><abbr title="App\Http\Controllers\Api\v1\JokeController::forceDelete">forceDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#59"><abbr title="App\Http\Controllers\Api\v1\UserController::profile">profile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#90"><abbr title="App\Http\Controllers\Api\v1\UserController::updateProfile">updateProfile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#120"><abbr title="App\Http\Controllers\Api\v1\UserController::updatePassword">updatePassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#155"><abbr title="App\Http\Controllers\Api\v1\UserController::deleteProfile">deleteProfile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#190"><abbr title="App\Http\Controllers\Api\v1\UserController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#253"><abbr title="App\Http\Controllers\Api\v1\UserController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#301"><abbr title="App\Http\Controllers\Api\v1\UserController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#345"><abbr title="App\Http\Controllers\Api\v1\UserController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#387"><abbr title="App\Http\Controllers\Api\v1\UserController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#430"><abbr title="App\Http\Controllers\Api\v1\UserController::assignRoles">assignRoles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#475"><abbr title="App\Http\Controllers\Api\v1\UserController::changeStatus">changeStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#511"><abbr title="App\Http\Controllers\Api\v1\UserController::canUpdateUser">canUpdateUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#549"><abbr title="App\Http\Controllers\Api\v1\UserController::canDeleteUser">canDeleteUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/UserController.php.html#582"><abbr title="App\Http\Controllers\Api\v1\UserController::canCreateUserWithRoles">canCreateUserWithRoles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="v1/VoteController.php.html#130"><abbr title="App\Http\Controllers\Api\v1\VoteController::removeVote">removeVote</abbr></a></td><td class="text-right">69%</td></tr>
+       <tr><td><a href="v1/VoteController.php.html#181"><abbr title="App\Http\Controllers\Api\v1\VoteController::clearUserVotes">clearUserVotes</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="v1/VoteController.php.html#222"><abbr title="App\Http\Controllers\Api\v1\VoteController::clearAllVotes">clearAllVotes</abbr></a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="v1/CategoryController.php.html#64"><abbr title="App\Http\Controllers\Api\v1\CategoryController::index">index</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#66"><abbr title="App\Http\Controllers\Api\v1\JokeController::index">index</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="v1/UserController.php.html#511"><abbr title="App\Http\Controllers\Api\v1\UserController::canUpdateUser">canUpdateUser</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="v1/UserController.php.html#582"><abbr title="App\Http\Controllers\Api\v1\UserController::canCreateUserWithRoles">canCreateUserWithRoles</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#176"><abbr title="App\Http\Controllers\Api\v1\JokeController::show">show</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="v1/UserController.php.html#190"><abbr title="App\Http\Controllers\Api\v1\UserController::index">index</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="v1/UserController.php.html#253"><abbr title="App\Http\Controllers\Api\v1\UserController::store">store</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="v1/UserController.php.html#549"><abbr title="App\Http\Controllers\Api\v1\UserController::canDeleteUser">canDeleteUser</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#271"><abbr title="App\Http\Controllers\Api\v1\CategoryController::restore">restore</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#226"><abbr title="App\Http\Controllers\Api\v1\JokeController::update">update</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#341"><abbr title="App\Http\Controllers\Api\v1\JokeController::restore">restore</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="v1/UserController.php.html#475"><abbr title="App\Http\Controllers\Api\v1\UserController::changeStatus">changeStatus</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="v1/AuthController.php.html#89"><abbr title="App\Http\Controllers\Api\v1\AuthController::login">login</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="v1/AuthController.php.html#221"><abbr title="App\Http\Controllers\Api\v1\AuthController::logoutByRole">logoutByRole</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#153"><abbr title="App\Http\Controllers\Api\v1\CategoryController::show">show</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#197"><abbr title="App\Http\Controllers\Api\v1\CategoryController::update">update</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#234"><abbr title="App\Http\Controllers\Api\v1\CategoryController::destroy">destroy</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#314"><abbr title="App\Http\Controllers\Api\v1\CategoryController::forceDelete">forceDelete</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#135"><abbr title="App\Http\Controllers\Api\v1\JokeController::store">store</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#271"><abbr title="App\Http\Controllers\Api\v1\JokeController::destroy">destroy</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#384"><abbr title="App\Http\Controllers\Api\v1\JokeController::forceDelete">forceDelete</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="v1/UserController.php.html#301"><abbr title="App\Http\Controllers\Api\v1\UserController::show">show</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="v1/UserController.php.html#345"><abbr title="App\Http\Controllers\Api\v1\UserController::update">update</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="v1/UserController.php.html#387"><abbr title="App\Http\Controllers\Api\v1\UserController::destroy">destroy</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="v1/UserController.php.html#430"><abbr title="App\Http\Controllers\Api\v1\UserController::assignRoles">assignRoles</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="v1/AuthController.php.html#36"><abbr title="App\Http\Controllers\Api\v1\AuthController::register">register</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="v1/AuthController.php.html#170"><abbr title="App\Http\Controllers\Api\v1\AuthController::forgotPassword">forgotPassword</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="v1/AuthController.php.html#190"><abbr title="App\Http\Controllers\Api\v1\AuthController::resetPassword">resetPassword</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="v1/CategoryController.php.html#118"><abbr title="App\Http\Controllers\Api\v1\CategoryController::store">store</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="v1/JokeController.php.html#308"><abbr title="App\Http\Controllers\Api\v1\JokeController::random">random</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="v1/UserController.php.html#120"><abbr title="App\Http\Controllers\Api\v1\UserController::updatePassword">updatePassword</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="v1/VoteController.php.html#130"><abbr title="App\Http\Controllers\Api\v1\VoteController::removeVote">removeVote</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="v1/VoteController.php.html#181"><abbr title="App\Http\Controllers\Api\v1\VoteController::clearUserVotes">clearUserVotes</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="v1/VoteController.php.html#222"><abbr title="App\Http\Controllers\Api\v1\VoteController::clearAllVotes">clearAllVotes</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.10</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.19</a> and <a href="https://phpunit.de/">PHPUnit 11.5.15</a> at Tue Oct 7 12:53:49 UTC 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../_js/jquery.min.js?v=11.0.10" type="text/javascript"></script>
+  <script src="../../../_js/d3.min.js?v=11.0.10" type="text/javascript"></script>
+  <script src="../../../_js/nv.d3.min.js?v=11.0.10" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([4,0,0,0,0,0,0,0,0,1,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([36,0,0,0,0,0,0,1,0,2,1,0], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,14,"<a href=\"v1\/AuthController.php.html#20\">App\\Http\\Controllers\\Api\\v1\\AuthController<\/a>"],[0,26,"<a href=\"v1\/CategoryController.php.html#40\">App\\Http\\Controllers\\Api\\v1\\CategoryController<\/a>"],[0,31,"<a href=\"v1\/JokeController.php.html#41\">App\\Http\\Controllers\\Api\\v1\\JokeController<\/a>"],[0,48,"<a href=\"v1\/UserController.php.html#42\">App\\Http\\Controllers\\Api\\v1\\UserController<\/a>"],[87.09677419354838,15,"<a href=\"v1\/VoteController.php.html#35\">App\\Http\\Controllers\\Api\\v1\\VoteController<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"v1\/AuthController.php.html#36\">App\\Http\\Controllers\\Api\\v1\\AuthController::register<\/a>"],[0,3,"<a href=\"v1\/AuthController.php.html#89\">App\\Http\\Controllers\\Api\\v1\\AuthController::login<\/a>"],[0,1,"<a href=\"v1\/AuthController.php.html#139\">App\\Http\\Controllers\\Api\\v1\\AuthController::profile<\/a>"],[0,1,"<a href=\"v1\/AuthController.php.html#157\">App\\Http\\Controllers\\Api\\v1\\AuthController::logout<\/a>"],[0,2,"<a href=\"v1\/AuthController.php.html#170\">App\\Http\\Controllers\\Api\\v1\\AuthController::forgotPassword<\/a>"],[0,2,"<a href=\"v1\/AuthController.php.html#190\">App\\Http\\Controllers\\Api\\v1\\AuthController::resetPassword<\/a>"],[0,3,"<a href=\"v1\/AuthController.php.html#221\">App\\Http\\Controllers\\Api\\v1\\AuthController::logoutByRole<\/a>"],[0,8,"<a href=\"v1\/CategoryController.php.html#64\">App\\Http\\Controllers\\Api\\v1\\CategoryController::index<\/a>"],[0,2,"<a href=\"v1\/CategoryController.php.html#118\">App\\Http\\Controllers\\Api\\v1\\CategoryController::store<\/a>"],[0,3,"<a href=\"v1\/CategoryController.php.html#153\">App\\Http\\Controllers\\Api\\v1\\CategoryController::show<\/a>"],[0,3,"<a href=\"v1\/CategoryController.php.html#197\">App\\Http\\Controllers\\Api\\v1\\CategoryController::update<\/a>"],[0,3,"<a href=\"v1\/CategoryController.php.html#234\">App\\Http\\Controllers\\Api\\v1\\CategoryController::destroy<\/a>"],[0,4,"<a href=\"v1\/CategoryController.php.html#271\">App\\Http\\Controllers\\Api\\v1\\CategoryController::restore<\/a>"],[0,3,"<a href=\"v1\/CategoryController.php.html#314\">App\\Http\\Controllers\\Api\\v1\\CategoryController::forceDelete<\/a>"],[0,7,"<a href=\"v1\/JokeController.php.html#66\">App\\Http\\Controllers\\Api\\v1\\JokeController::index<\/a>"],[0,3,"<a href=\"v1\/JokeController.php.html#135\">App\\Http\\Controllers\\Api\\v1\\JokeController::store<\/a>"],[0,5,"<a href=\"v1\/JokeController.php.html#176\">App\\Http\\Controllers\\Api\\v1\\JokeController::show<\/a>"],[0,4,"<a href=\"v1\/JokeController.php.html#226\">App\\Http\\Controllers\\Api\\v1\\JokeController::update<\/a>"],[0,3,"<a href=\"v1\/JokeController.php.html#271\">App\\Http\\Controllers\\Api\\v1\\JokeController::destroy<\/a>"],[0,2,"<a href=\"v1\/JokeController.php.html#308\">App\\Http\\Controllers\\Api\\v1\\JokeController::random<\/a>"],[0,4,"<a href=\"v1\/JokeController.php.html#341\">App\\Http\\Controllers\\Api\\v1\\JokeController::restore<\/a>"],[0,3,"<a href=\"v1\/JokeController.php.html#384\">App\\Http\\Controllers\\Api\\v1\\JokeController::forceDelete<\/a>"],[0,1,"<a href=\"v1\/UserController.php.html#59\">App\\Http\\Controllers\\Api\\v1\\UserController::profile<\/a>"],[0,1,"<a href=\"v1\/UserController.php.html#90\">App\\Http\\Controllers\\Api\\v1\\UserController::updateProfile<\/a>"],[0,2,"<a href=\"v1\/UserController.php.html#120\">App\\Http\\Controllers\\Api\\v1\\UserController::updatePassword<\/a>"],[0,1,"<a href=\"v1\/UserController.php.html#155\">App\\Http\\Controllers\\Api\\v1\\UserController::deleteProfile<\/a>"],[0,5,"<a href=\"v1\/UserController.php.html#190\">App\\Http\\Controllers\\Api\\v1\\UserController::index<\/a>"],[0,5,"<a href=\"v1\/UserController.php.html#253\">App\\Http\\Controllers\\Api\\v1\\UserController::store<\/a>"],[0,3,"<a href=\"v1\/UserController.php.html#301\">App\\Http\\Controllers\\Api\\v1\\UserController::show<\/a>"],[0,3,"<a href=\"v1\/UserController.php.html#345\">App\\Http\\Controllers\\Api\\v1\\UserController::update<\/a>"],[0,3,"<a href=\"v1\/UserController.php.html#387\">App\\Http\\Controllers\\Api\\v1\\UserController::destroy<\/a>"],[0,3,"<a href=\"v1\/UserController.php.html#430\">App\\Http\\Controllers\\Api\\v1\\UserController::assignRoles<\/a>"],[0,4,"<a href=\"v1\/UserController.php.html#475\">App\\Http\\Controllers\\Api\\v1\\UserController::changeStatus<\/a>"],[0,6,"<a href=\"v1\/UserController.php.html#511\">App\\Http\\Controllers\\Api\\v1\\UserController::canUpdateUser<\/a>"],[0,5,"<a href=\"v1\/UserController.php.html#549\">App\\Http\\Controllers\\Api\\v1\\UserController::canDeleteUser<\/a>"],[0,6,"<a href=\"v1\/UserController.php.html#582\">App\\Http\\Controllers\\Api\\v1\\UserController::canCreateUserWithRoles<\/a>"],[96.42857142857143,5,"<a href=\"v1\/VoteController.php.html#60\">App\\Http\\Controllers\\Api\\v1\\VoteController::vote<\/a>"],[69.23076923076923,5,"<a href=\"v1\/VoteController.php.html#130\">App\\Http\\Controllers\\Api\\v1\\VoteController::removeVote<\/a>"],[83.33333333333334,3,"<a href=\"v1\/VoteController.php.html#181\">App\\Http\\Controllers\\Api\\v1\\VoteController::clearUserVotes<\/a>"],[88.88888888888889,2,"<a href=\"v1\/VoteController.php.html#222\">App\\Http\\Controllers\\Api\\v1\\VoteController::clearAllVotes<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
