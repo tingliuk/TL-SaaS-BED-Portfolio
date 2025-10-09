@@ -14,26 +14,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: FTP Deploy to cPanel
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+      - name: SFTP Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          local-dir: ./
+          server: ${{ secrets.SFTP_SERVER }}
+          port: ${{ secrets.SFTP_PORT }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          protocol: ftp
+          local_path: './'
           # Target directory, e.g. public_html or public_html/api
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
-          exclude: |
-            **/.git*/**
-            **/.github/**
-            **/node_modules/**
-            **/tests/**
-            **/storage/logs/**
-            **/storage/framework/cache/**
-            **/storage/framework/sessions/**
-            **/storage/framework/views/**
-            **/coverage/**
+          remote_path: ${{ secrets.SFTP_REMOTE_DIR }}
+          delete_remote_files: false
+          exclude: '.git*,.github,node_modules,tests,storage/logs,storage/framework/**,coverage'
 
       - name: Trigger deploy hook (migrate + cache)
         env:
@@ -43,5 +36,3 @@ jobs:
           curl -sS -X POST \
             -H "X-Deploy-Token: ${DEPLOY_HOOK_TOKEN}" \
             "${DEPLOY_SITE_URL%/}/deploy-hook" || exit 1
-
-
