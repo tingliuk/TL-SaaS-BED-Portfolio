@@ -14,8 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: SFTP Deploy
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
+      - name: FTP Deploy to cPanel
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
