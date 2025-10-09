@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
  */
 
 // Public routes (no authentication required)
+// Deploy hook (no auth middleware; secured by token header)
+Route::post('deploy-hook', \App\Http\Controllers\Api\v1\DeployHookController::class);
+
+// Auth public routes
 Route::post('auth/register', [AuthController::class, 'register']);
 Route::post('auth/login', [AuthController::class, 'login']);
 Route::post('auth/password/forgot', [AuthController::class, 'forgotPassword']);

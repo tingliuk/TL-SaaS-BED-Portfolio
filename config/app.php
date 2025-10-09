@@ -84,6 +84,9 @@ return [
 
     'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
 
+    // Token used to authorize the deployment hook endpoint
+    'deploy_hook_token' => env('DEPLOY_HOOK_TOKEN', null),
+
     /*
     |--------------------------------------------------------------------------
     | Encryption Key
