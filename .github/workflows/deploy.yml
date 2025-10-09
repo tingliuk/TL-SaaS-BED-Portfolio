@@ -24,6 +24,7 @@ jobs:
           local-dir: ./
           # Target directory, e.g. public_html or public_html/api
           server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          timeout-minutes: 15 # time out after 15 minutes
           exclude: |
             **/.git*/**
             **/.github/**
