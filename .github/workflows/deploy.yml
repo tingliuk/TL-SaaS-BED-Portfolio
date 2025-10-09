@@ -21,12 +21,10 @@ jobs:
           port: ${{ secrets.SFTP_PORT }}
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
-          protocol: ftp
           local_path: './'
           # Target directory, e.g. public_html or public_html/api
           remote_path: ${{ secrets.SFTP_REMOTE_DIR }}
           delete_remote_files: false
-          exclude: '.git*,.github,node_modules,tests,storage/logs,storage/framework/**,coverage'
 
       - name: Trigger deploy hook (migrate + cache)
         env:
