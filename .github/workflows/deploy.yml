@@ -25,6 +25,8 @@ jobs:
           # Target directory, e.g. public_html or public_html/api
           remote_path: ${{ secrets.SFTP_REMOTE_DIR }}
           delete_remote_files: false
+          rsyncArgs: '--exclude=node_modules --exclude=.git* --exclude=.github --exclude=tests --exclude=coverage --exclude=storage/framework/** --exclude=storage/logs'
+          sftpArgs: '-o ConnectTimeout=3600'
 
       - name: Trigger deploy hook (migrate + cache)
         env:
